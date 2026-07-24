@@ -1,4 +1,9 @@
 jobs:
   Job1:
     name: Job 1
-    steps: []
+  Job2:
+    name: Job 2
+  Job3:
+    name: Job 3
+  Job4:
+    name: Job 4
