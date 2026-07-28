@@ -1,0 +1,13 @@
+jobs:
+  Job1:
+    name: Build
+    steps: []
+  Test:
+    name: Test
+    dependencies:
+      - Job1
+  Deploy:
+    name: deploy
+    dependencies:
+      - Job1
+      - Test
