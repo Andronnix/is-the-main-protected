@@ -1,9 +1,4 @@
 jobs:
   Job1:
-    name: Job 1
-  Job2:
-    name: Job 2
-  Job3:
-    name: Job 3
-  Job4:
-    name: Job 4
+    name: I am in another branch
+    steps: []
