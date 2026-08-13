@@ -1,4 +1,15 @@
 jobs:
   Job1:
-    name: I am in another branch
-    steps: []
+    name: Job 1
+    steps:
+      - type: script
+        script-content: |-
+          ls 
+          cat .teamcity.yml
+  Job2:
+    name: Job 2
+    steps:
+      - type: script
+        script-content: cat README.md
+    dependencies:
+      - Job1
