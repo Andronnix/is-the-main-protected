@@ -1,0 +1,13 @@
+jobs:
+  Job1:
+    name: Job 1
+    steps: []
+  Job2:
+    name: Job 2
+    dependencies:
+      - Job1
+    steps:
+      - type: script
+        script-content: echo hello world
+  Job3:
+    name: Job 3
