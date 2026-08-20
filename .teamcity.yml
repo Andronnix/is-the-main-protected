@@ -8,4 +8,4 @@ jobs:
       - Job1
     steps:
       - type: script
-        script-content: echo hello world
+        script-content: echo hello world again
