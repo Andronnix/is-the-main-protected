@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.pipelines.*
+import jetbrains.buildServer.configs.kotlin.triggers.schedule
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -38,8 +39,7 @@ object PipelineInDsl : Pipeline({
         repository(DslContext.settingsRoot)
     }
     schedule {
-        schedulingPolicy = weekly {
-            dayOfWeek = ScheduleTrigger.DAY.Monday
+        schedulingPolicy = daily {
             hour = 15
             minute = 15
         }
