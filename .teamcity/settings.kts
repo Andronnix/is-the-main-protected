@@ -37,6 +37,14 @@ object PipelineInDsl : Pipeline({
     repositories {
         repository(DslContext.settingsRoot)
     }
+    schedule {
+        schedulingPolicy = weekly {
+            dayOfWeek = ScheduleTrigger.DAY.Monday
+            hour = 15
+            minute = 15
+        }
+    }
+
 
     job(PipelineInDsl_Job1)
 })
