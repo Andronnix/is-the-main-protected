@@ -38,11 +38,13 @@ object PipelineInDsl : Pipeline({
     repositories {
         repository(DslContext.settingsRoot)
     }
+    triggers {
     schedule {
         schedulingPolicy = daily {
             hour = 15
             minute = 15
         }
+    }
     }
 
 
