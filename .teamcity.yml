@@ -1,8 +1,0 @@
-jobs:
-  Job1:
-    name: Job Changed in repo again adn again
-    steps: []
-  Job1_2:
-    name: Job 1
-  Job2:
-    name: Job 2
